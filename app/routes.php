@@ -59,3 +59,34 @@ Route::get('/contacto', function()
 		));
 });
 
+Route::get('/login', function()
+{
+	return View::make('backend/login');
+});
+
+Route::get('/dashboard', function()
+{
+	return View::make('backend/dashboard')->with(
+		array(
+			'title'		=>		"Panel de Control",
+            'subtitle'	=>		"Editar secciones"
+		));
+});
+
+Route::get('/seo', function()
+{
+	return View::make('backend/seo')->with(
+		array(
+			'title'		=>		"Panel de Control",
+            'subtitle'	=>		"Editar SEO"
+		));
+});
+
+Route::get('/config', function()
+{
+	return View::make('backend/config')->with(
+		array(
+			'title'		=>		"Panel de Control",
+            'subtitle'	=>		"Configuración"
+		));
+});

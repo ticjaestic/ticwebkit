@@ -10,10 +10,10 @@
     <title>@yield('title')</title>
     
 	<!-- Bootstrap core CSS -->
-	{{ HTML::style('app/views/base/css/bootstrap.min.css') }}
+	{{ HTML::style('app/views/fe_base/css/bootstrap.min.css') }}
 	
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	{{ HTML::script('app/views/base/js/ie10-viewport-bug-workaround.js') }}
+	{{ HTML::script('app/views/fe_base/js/ie10-viewport-bug-workaround.js') }}
        
 	
     
@@ -24,7 +24,7 @@
     <![endif]-->
     
     <!-- Custom styles for this template -->
-	{{ HTML::style('app/views/base/css/carousel.css') }}
+	{{ HTML::style('app/views/fe_base/css/carousel.css') }}
 </head>
 <body>
 	<div class="navbar-wrapper">
@@ -190,8 +190,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     {{ HTML::script('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js') }}
-    {{ HTML::style('app/views/base/js/bootstrap.min.js') }}
-    {{ HTML::style('app/views/base/js/docs.min.js') }}
+    {{ HTML::style('app/views/fe_base/js/bootstrap.min.js') }}
+    {{ HTML::style('app/views/fe_base/js/docs.min.js') }}
 
 </body>
 </html>
