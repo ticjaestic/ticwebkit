@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<title><?php echo $__env->yieldContent('title'); ?></title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+<body>
+	<div class="jumbotron">
+		<h1 class="block-center"><?php echo $__env->yieldContent('title'); ?></h1>
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				 <ul class="nav navbar-nav">
+				 	<li><?php echo HTML::link(URL::to('/'), 'Inicio'); ?></li>
+				 	<li><?php echo HTML::link(URL::to('/quienessomos'), 'Quiénes somos'); ?></li>
+				 	<li><?php echo HTML::link(URL::to('/quehacemos'), 'Qué hacemos'); ?></li>
+				 	<li><?php echo HTML::link(URL::to('/dondeestamos'), 'Dónde estamos'); ?></li>
+				 	<li><?php echo HTML::link(URL::to('/fotos'), 'Fotos'); ?></li>
+				 	<li><?php echo HTML::link(URL::to('/contacto'), 'Contacto'); ?></li>
+				 </ul>
+			</div>
+		</nav>
+	</div>
+	
+	
+	
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
