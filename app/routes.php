@@ -59,9 +59,27 @@ Route::get('/contacto', function()
 		));
 });
 
-Route::get('/login', function()
+Route::get('login', function()
 {
 	return View::make('backend/login');
+});
+
+Route::post('login_check', function()
+{
+	$loginData = array(
+		"email"			=>			e(Input::get("email")),
+		"password"		=>			e(Input::get("password"))
+	);
+
+	if (Auth::attempt($loginData)) 
+	{
+		return Redirect::to("dashboard");
+	}
+	else
+	{
+		return Redirect::to("login")->with(array("error" => "Email o password incorrectos"));
+	}
+	
 });
 
 Route::get('/dashboard', function()

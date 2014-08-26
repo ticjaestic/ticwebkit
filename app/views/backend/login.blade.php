@@ -36,15 +36,27 @@
   <body>
 
     <div class="container">
-        
-          <form class="form-signin" role="form">
-            <h2 class="form-signin-heading">TicWebKit</h2>
-            <input type="email" class="form-control" placeholder="Email address" required autofocus>
-            <input type="password" class="form-control" placeholder="Password" required>
+          
+          @if (Session::has('error'))
+            <div class="alert alert-danger">
+              {{ Session::get('error') }}
+            </div> 
+          @endif
 
-              {{ Form::submit('Entrar', array("class" => "btn btn-lg btn-primary btn-block")) }}
+          {{ Form::open(array('url' => 'login_check'))}}
+          <h2 class="form-signin-heading">TicWebKit</h2>
+          <div class="form-group">
+            {{ Form::label('email', 'Email')}}
+            {{ Form::email('email', Input::old('email'), array('class' => 'form-control')) }}
+          </div>            
+          <div class="form-group">
+            {{ Form::label('password', 'Password')}}
+            {{ Form::password('password', array('class' => 'form-control')) }}
+          </div>
+              {{ Form::submit('Entrar', array("class" => "btn btn-primary btn-block")) }}
             <a href="/">Volver a Inicio</a>
-          </form>
+          {{ Form::close() }}
+          
     </div> <!-- /container -->
 
 
