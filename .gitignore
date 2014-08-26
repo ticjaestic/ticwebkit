@@ -1,3 +1,4 @@
 app/storage/views
 app/config/database.php
 app/storage/sessions
+app/storage/logs/
