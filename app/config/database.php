@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'bd_twk_01',
+			'database'  => 'db_twk_01',
 			'username'  => 'root',
-			'password'  => 'root',
+			'password'  => 'fazer',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
