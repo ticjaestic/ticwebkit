@@ -15,7 +15,9 @@ Route::get('/', function()
 {
 	return View::make('frontend/home')->with(
 		array(
-			'title'		=>		"Home"
+			'title'		        =>		"Abogado en Reus",
+            'metadescription'   =>      "Abogado en Reus, servicios de Derecho Civil, Derecho Mercantil, Derecho Familiar, Derecho Inmobiliario, Derecho sobre propiedad",
+            'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus"
 		));
 });
 

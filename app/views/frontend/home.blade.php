@@ -4,3 +4,11 @@
 	{{ $title }}
 @stop
 
+@section('metadescription')
+    {{ $metadescription }}
+@stop
+
+@section('keywords')
+    {{ $keywords }}
+@stop
+

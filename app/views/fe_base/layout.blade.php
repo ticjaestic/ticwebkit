@@ -1,197 +1,286 @@
-<!doctype html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="@yield('title')">
-    <meta name="author" content="Jaestic, S.L.">
-    
-    <title>@yield('title')</title>
-    
-	<!-- Bootstrap core CSS -->
-	{{ HTML::style('app/views/fe_base/css/bootstrap.min.css') }}
-	
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	{{ HTML::script('app/views/fe_base/js/ie10-viewport-bug-workaround.js') }}
-       
-	
-    
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <!-- Custom styles for this template -->
-	{{ HTML::style('app/views/fe_base/css/carousel.css') }}
-</head>
-<body>
-	<div class="navbar-wrapper">
-      <div class="container">
+<!DOCTYPE HTML>
+<!--
+	Ex Machina by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Ex Machina by TEMPLATED</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        {{ HTML::script('app/views/fe_base/js/skel.min.js') }}
+        {{ HTML::script('app/views/fe_base/js/skel-panels.min.js') }}
+		{{ HTML::script('app/views/fe_base/js/init.js') }}
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body class="homepage">
 
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Abogado en Reus</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li>{{ HTML::link(URL::to('/'), 'Inicio') }}</li>
-                <li>{{ HTML::link(URL::to('/quienessomos'), 'Quiénes somos') }}</li>
-				<li>{{ HTML::link(URL::to('/quehacemos'), 'Qué hacemos') }}</li>
-				<li>{{ HTML::link(URL::to('/dondeestamos'), 'Dónde estamos') }}</li>
-				<li>{{ HTML::link(URL::to('/fotos'), 'Fotos') }}</li>
-				<li>{{ HTML::link(URL::to('/contacto'), 'Contacto') }}</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+	<!-- Header -->
+		<div id="header">
+			<div class="container">
+					
+				<!-- Logo -->
+					<div id="logo">
+						<h1><a href="#">Ex Machina</a></h1>
+					</div>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li class="active"><a href="index.html">Homepage</a></li>
+							<li><a href="left-sidebar.html">Left Sidebar</a></li>
+							<li><a href="right-sidebar.html">Right Sidebar</a></li>
+							<li><a href="no-sidebar.html">No Sidebar</a></li>
+						</ul>
+					</nav>
 
-      </div>
-    </div>
+			</div>
+		</div>
+	<!-- Header -->
+		
+	<!-- Banner -->
+		<div id="banner">
+			<div class="container">
+			</div>
+		</div>
+	<!-- /Banner -->
+
+	<!-- Main -->
+		<div id="page">
+
+			<!-- Extra -->
+			<div id="marketing" class="container">
+				<div class="row">
+					<div class="3u">
+						<section>
+							<header>
+								<h2>Feugiat Tempus</h2>
+							</header>
+							<p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
+							<p><a href="#"><img src="images/pics13.jpg" alt=""></a></p>
+							<a href="#" class="button">More</a>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<header>
+								<h2>Maecenas lectus</h2>
+							</header>
+							<p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
+							<p><a href="#"><img src="images/pics14.jpg" alt=""></a></p>
+							<a href="#" class="button">More</a>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<header>
+								<h2>Luctus lectus</h2>
+							</header>
+							<p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
+							<p><a href="#"><img src="images/pics15.jpg" alt=""></a></p>
+							<a href="#" class="button">More</a>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<header>
+								<h2>Posuere eleifend</h2>
+							</header>
+							<p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
+							<p><a href="#"><img src="images/pics16.jpg" alt=""></a></p>
+							<a href="#" class="button">More</a>
+						</section>
+					</div>
+				</div>
+			</div>
+			<!-- /Extra -->
+				
+			<!-- Main -->
+			<div id="main" class="container">
+				<div class="row">
+					<div class="6u">
+						<section>
+							<header>
+								<h2>Integer gravida nibh quis urna</h2>
+								<span class="byline">Augue praesent a lacus at urna congue rutrum</span>
+							</header>
+							<p>This is <strong>Ex Machina</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
+							<p>Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat. Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat.</p>
+							<p>Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat. Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat.</p>
+							<a href="#" class="button">More Details</a>
+						</section>
+					</div>
+					<div class="3u">
+						<section class="sidebar">
+							<header>
+								<h2>Feugiat Tempus</h2>
+							</header>
+							<ul class="style2">
+								<li>
+									<a href="#"><img src="images/pics07.jpg" alt=""></a>
+									<p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
+								</li>
+								<li>
+									<a href="#"><img src="images/pics08.jpg" alt=""></a>
+									<p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
+								</li>
+								<li>
+									<a href="#"><img src="images/pics09.jpg" alt=""></a>
+									<p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
+								</li>
+								<li>
+									<a href="#"><img src="images/pics10.jpg" alt=""></a>
+									<p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
+								</li>
+							</ul>						
+						</section>
+					</div>
+					<div class="3u">
+						<section class="sidebar">
+							<header>
+								<h2>Feugiat Tempus</h2>
+							</header>
+							<ul class="style1">
+								<li><a href="#">Maecenas luctus lectus at sapien</a></li>
+								<li><a href="#">Etiam rhoncus volutpat erat</a></li>
+								<li><a href="#">Donec dictum metus in sapien</a></li>
+								<li><a href="#">Nulla luctus eleifend purus</a></li>
+								<li><a href="#">Maecenas luctus lectus at sapien</a></li>
+							</ul>
+						</section>
+						<section class="sidebar">
+							<header>
+								<h2>Nulla luctus eleifend</h2>
+							</header>
+							<ul class="style1">
+								<li><a href="#">Maecenas luctus lectus at sapien</a></li>
+								<li><a href="#">Donec dictum metus in sapien</a></li>
+								<li><a href="#">Integer gravida nibh quis urna</a></li>
+								<li><a href="#">Etiam posuere augue sit amet nisl</a></li>
+								<li><a href="#">Mauris vulputate dolor sit amet nibh</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+			<!-- Main -->
+
+		</div>
+	<!-- /Main -->
+
+	<!-- Featured -->
+		<div id="featured">
+			<div class="container">
+				<div class="row">
+					<section class="4u">
+						<div class="box">
+							<a href="#" class="image left"><img src="images/pics04.jpg" alt=""></a>
+							<h3>Etiam posuere augue</h3>
+							<p>Donec nonummy magna quis risus eleifend. </p>
+							<a href="#" class="button">More</a>
+						</div>
+					</section>
+					<section class="4u">
+						<div class="box">
+							<a href="#" class="image left"><img src="images/pics05.jpg" alt=""></a>
+							<h3>Etiam posuere augue</h3>
+							<p>Donec nonummy magna quis risus eleifend. </p>
+							<a href="#" class="button">More</a>
+						</div>
+					</section>
+					<section class="4u">
+						<div class="box">
+							<a href="#" class="image left"><img src="images/pics06.jpg" alt=""></a>
+							<h3>Etiam posuere augue</h3>
+							<p>Donec nonummy magna quis risus eleifend. </p>
+							<a href="#" class="button">More</a>
+						</div>
+					</section>
+				</div>
+				<div class="divider"></div>
+			</div>
+		</div>
+	<!-- /Featured -->
+
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="3u">
+						<section>
+							<h2>Maecenas lectus</h2>
+							<div class="balloon">
+								<blockquote>&ldquo;&nbsp;&nbsp;Donec leo, vivamus ullamcorper fermentum nibh in augue pulvinar ullamcorper metus praesent a lacus at urna congue ullamcorper  rutrum.&nbsp;&nbsp;&rdquo;<br>
+									<br>
+									<strong>&ndash;&nbsp;&nbsp;John Smith</strong></blockquote>
+							</div>
+							<div class="ballon-bgbtm">&nbsp;</div>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<h2>Donec dictum</h2>
+							<ul class="default">
+								<li>
+									<h3>Mauris vulputate dolor sit amet</h3>
+									<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
+								</li>
+								<li>
+									<h3>Fusce ultrices fringilla metus</h3>
+									<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
+								</li>
+								<li>
+									<h3>Donec dictum metus in sapien</h3>
+									<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<h2>Nulla leifend</h2>
+							<p>Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat.</p>
+							<ul class="style5">
+								<li><a href="#"><img src="images/pics07.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/pics08.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/pics09.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/pics10.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/pics11.jpg" alt=""></a></li>
+								<li><a href="#"><img src="images/pics12.jpg" alt=""></a></li>
+							</ul>
+							<a href="#" class="button">More Collections</a>
+						</section>
+					</div>
+					<div class="3u">
+						<section>
+							<h2>Luctus eleifend</h2>
+							<p><strong>Aliquam erat volutpat. Pellentesque tristique ante ut risus. </strong></p>
+							<p>Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio vel elit.</p>
+							<p>Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat.</p>
+							<a href="#" class="button">More Collections</a>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- /Footer -->
+
+	<!-- Copyright -->
+		<div id="copyright" class="container">
+			Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+		</div>
 
 
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->	
-	
-	
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    {{ HTML::script('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js') }}
-    {{ HTML::style('app/views/fe_base/js/bootstrap.min.js') }}
-    {{ HTML::style('app/views/fe_base/js/docs.min.js') }}
-
-</body>
+	</body>
 </html>
