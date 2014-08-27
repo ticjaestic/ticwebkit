@@ -15,7 +15,7 @@ Route::get('/', function()
 {
 	return View::make('frontend/home')->with(
 		array(
-			'title'		        =>		"Abogado en Reus",
+			'title'		        =>		"Abogado en Reus | Inicio",
             'metadescription'   =>      "Abogado en Reus, servicios de Derecho Civil, Derecho Mercantil, Derecho Familiar, Derecho Inmobiliario, Derecho sobre propiedad",
             'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus"
 		));
@@ -35,7 +35,7 @@ Route::get('/quehacemos', function()
 {
 	return View::make('frontend/home')->with(
 		array(
-			'title'		        =>		"Abogado en Reus | Quiénes Somos",
+			'title'		        =>		"Abogado en Reus | Qué hacemos",
             'metadescription'   =>      "Abogado en Reus, servicios de Derecho Civil, Derecho Mercantil, Derecho Familiar, Derecho Inmobiliario, Derecho sobre propiedad",
             'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus"
 		));
