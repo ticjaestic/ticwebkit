@@ -3,7 +3,10 @@ app/storage/sessions
 app/storage/logs
 app/config/database.php
 <<<<<<< HEAD
+<<<<<<< HEAD
 app/storage/sessions
 app/storage/logs/laravel.log
+=======
+>>>>>>> FETCH_HEAD
 =======
 >>>>>>> FETCH_HEAD
