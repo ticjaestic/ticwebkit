@@ -3,5 +3,15 @@
 
 <?php $__env->stopSection(); ?>
 
+<?php $__env->startSection('metadescription'); ?>
+    <?php echo $metadescription; ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('keywords'); ?>
+    <?php echo $keywords; ?>
+
+<?php $__env->stopSection(); ?>
+
 
 <?php echo $__env->make('fe_base.layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

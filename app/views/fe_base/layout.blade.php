@@ -1,286 +1,346 @@
-<!DOCTYPE HTML>
-<!--
-	Ex Machina by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-<html>
-	<head>
-		<title>Ex Machina by TEMPLATED</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400,300,700' rel='stylesheet' type='text/css'>
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        {{ HTML::script('app/views/fe_base/js/skel.min.js') }}
-        {{ HTML::script('app/views/fe_base/js/skel-panels.min.js') }}
-		{{ HTML::script('app/views/fe_base/js/init.js') }}
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-	</head>
-	<body class="homepage">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moderna - Bootstrap 3 flat corporate template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://bootstraptaste.com" />
+<!-- css -->
+{{ HTML::style('app/views/fe_base/css/bootstrap.min.css') }}
+{{ HTML::style('app/views/fe_base/css/jquery.fancybox.css') }}
+<!-- TODO: Encontrar este CSS 
 
-	<!-- Header -->
-		<div id="header">
-			<div class="container">
-					
-				<!-- Logo -->
-					<div id="logo">
-						<h1><a href="#">Ex Machina</a></h1>
-					</div>
-				
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li class="active"><a href="index.html">Homepage</a></li>
-							<li><a href="left-sidebar.html">Left Sidebar</a></li>
-							<li><a href="right-sidebar.html">Right Sidebar</a></li>
-							<li><a href="no-sidebar.html">No Sidebar</a></li>
-						</ul>
-					</nav>
+	<link href="css/jcarousel.css" rel="stylesheet" /> -->
+{{ HTML::style('app/views/fe_base/css/flexslider.css') }}
+{{ HTML::style('app/views/fe_base/css/style.css') }}
 
+<!-- Theme skin -->
+{{ HTML::style('app/views/fe_base/css/default.css') }}
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="wrapper">
+	<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><span>M</span>oderna</a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="active">{{ HTML::link(URL::to('/'), 'Inicio') }}</li>
+                        <li>{{ HTML::link(URL::to('quienessomos'), 'Quiénes somos') }}</li>
+                        <li>{{ HTML::link(URL::to('quehacemos'), 'Qué hacemos') }}</li>
+                        <li>{{ HTML::link(URL::to('dondeestamos'), 'Dónde estamos') }}</li>
+                        <li>{{ HTML::link(URL::to('fotos'), 'Fotos') }}</li>
+                        <li>{{ HTML::link(URL::to('contacto'), 'Contacto') }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- end header -->
+	<section id="featured">
+	<!-- start slider -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+	<!-- Slider -->
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+              <li>
+              	{{ HTML::image('app/views/fe_base/img/slides/1.jpg', 'slide 1')}}
+                <div class="flex-caption">
+                    <h3>Modern Design</h3> 
+					<p>Duis fermentum auctor ligula ac malesuada. Mauris et metus odio, in pulvinar urna</p> 
+					<a href="#" class="btn btn-theme">Learn More</a>
+                </div>
+              </li>
+              <li>
+                {{ HTML::image('app/views/fe_base/img/slides/2.jpg', 'slide 3')}}
+                <div class="flex-caption">
+                    <h3>Fully Responsive</h3> 
+					<p>Sodales neque vitae justo sollicitudin aliquet sit amet diam curabitur sed fermentum.</p> 
+					<a href="#" class="btn btn-theme">Learn More</a>
+                </div>
+              </li>
+              <li>
+                <{{ HTML::image('app/views/fe_base/img/slides/3.jpg', 'slide 3')}}
+                <div class="flex-caption">
+                    <h3>Clean & Fast</h3> 
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit donec mer lacinia.</p> 
+					<a href="#" class="btn btn-theme">Learn More</a>
+                </div>
+              </li>
+            </ul>
+        </div>
+	<!-- end slider -->
 			</div>
 		</div>
-	<!-- Header -->
-		
-	<!-- Banner -->
-		<div id="banner">
-			<div class="container">
-			</div>
-		</div>
-	<!-- /Banner -->
+	</div>	
+	
+	
 
-	<!-- Main -->
-		<div id="page">
-
-			<!-- Extra -->
-			<div id="marketing" class="container">
-				<div class="row">
-					<div class="3u">
-						<section>
-							<header>
-								<h2>Feugiat Tempus</h2>
-							</header>
-							<p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-							<p><a href="#"><img src="images/pics13.jpg" alt=""></a></p>
-							<a href="#" class="button">More</a>
-						</section>
-					</div>
-					<div class="3u">
-						<section>
-							<header>
-								<h2>Maecenas lectus</h2>
-							</header>
-							<p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-							<p><a href="#"><img src="images/pics14.jpg" alt=""></a></p>
-							<a href="#" class="button">More</a>
-						</section>
-					</div>
-					<div class="3u">
-						<section>
-							<header>
-								<h2>Luctus lectus</h2>
-							</header>
-							<p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-							<p><a href="#"><img src="images/pics15.jpg" alt=""></a></p>
-							<a href="#" class="button">More</a>
-						</section>
-					</div>
-					<div class="3u">
-						<section>
-							<header>
-								<h2>Posuere eleifend</h2>
-							</header>
-							<p class="subtitle">In posuere eleifend odio. Quisque semper augue mattis maecenas ligula.</p>
-							<p><a href="#"><img src="images/pics16.jpg" alt=""></a></p>
-							<a href="#" class="button">More</a>
-						</section>
+	</section>
+	<section class="callaction">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="big-cta">
+					<div class="cta-text">
+						<h2><span>Moderna</span> HTML Business Template</h2>
 					</div>
 				</div>
 			</div>
-			<!-- /Extra -->
-				
-			<!-- Main -->
-			<div id="main" class="container">
-				<div class="row">
-					<div class="6u">
-						<section>
-							<header>
-								<h2>Integer gravida nibh quis urna</h2>
-								<span class="byline">Augue praesent a lacus at urna congue rutrum</span>
-							</header>
-							<p>This is <strong>Ex Machina</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
-							<p>Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat. Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat.</p>
-							<p>Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Consectetuer adipiscing elit. Nam pede erat, porta eu, lobortis eget lorem ipsum dolor. Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat. Sed etiam vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat.</p>
-							<a href="#" class="button">More Details</a>
-						</section>
-					</div>
-					<div class="3u">
-						<section class="sidebar">
-							<header>
-								<h2>Feugiat Tempus</h2>
-							</header>
-							<ul class="style2">
-								<li>
-									<a href="#"><img src="images/pics07.jpg" alt=""></a>
-									<p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
-								</li>
-								<li>
-									<a href="#"><img src="images/pics08.jpg" alt=""></a>
-									<p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
-								</li>
-								<li>
-									<a href="#"><img src="images/pics09.jpg" alt=""></a>
-									<p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
-								</li>
-								<li>
-									<a href="#"><img src="images/pics10.jpg" alt=""></a>
-									<p>Donec leo, vivamus fermentum augue praesent a lacus at urna rutrum.</p>
-								</li>
-							</ul>						
-						</section>
-					</div>
-					<div class="3u">
-						<section class="sidebar">
-							<header>
-								<h2>Feugiat Tempus</h2>
-							</header>
-							<ul class="style1">
-								<li><a href="#">Maecenas luctus lectus at sapien</a></li>
-								<li><a href="#">Etiam rhoncus volutpat erat</a></li>
-								<li><a href="#">Donec dictum metus in sapien</a></li>
-								<li><a href="#">Nulla luctus eleifend purus</a></li>
-								<li><a href="#">Maecenas luctus lectus at sapien</a></li>
-							</ul>
-						</section>
-						<section class="sidebar">
-							<header>
-								<h2>Nulla luctus eleifend</h2>
-							</header>
-							<ul class="style1">
-								<li><a href="#">Maecenas luctus lectus at sapien</a></li>
-								<li><a href="#">Donec dictum metus in sapien</a></li>
-								<li><a href="#">Integer gravida nibh quis urna</a></li>
-								<li><a href="#">Etiam posuere augue sit amet nisl</a></li>
-								<li><a href="#">Mauris vulputate dolor sit amet nibh</a></li>
-							</ul>
-						</section>
-					</div>
-				</div>
-			</div>
-			<!-- Main -->
-
 		</div>
-	<!-- /Main -->
-
-	<!-- Featured -->
-		<div id="featured">
-			<div class="container">
+	</div>
+	</section>
+	<section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
 				<div class="row">
-					<section class="4u">
+					<div class="col-lg-3">
 						<div class="box">
-							<a href="#" class="image left"><img src="images/pics04.jpg" alt=""></a>
-							<h3>Etiam posuere augue</h3>
-							<p>Donec nonummy magna quis risus eleifend. </p>
-							<a href="#" class="button">More</a>
-						</div>
-					</section>
-					<section class="4u">
-						<div class="box">
-							<a href="#" class="image left"><img src="images/pics05.jpg" alt=""></a>
-							<h3>Etiam posuere augue</h3>
-							<p>Donec nonummy magna quis risus eleifend. </p>
-							<a href="#" class="button">More</a>
-						</div>
-					</section>
-					<section class="4u">
-						<div class="box">
-							<a href="#" class="image left"><img src="images/pics06.jpg" alt=""></a>
-							<h3>Etiam posuere augue</h3>
-							<p>Donec nonummy magna quis risus eleifend. </p>
-							<a href="#" class="button">More</a>
-						</div>
-					</section>
-				</div>
-				<div class="divider"></div>
-			</div>
-		</div>
-	<!-- /Featured -->
-
-	<!-- Footer -->
-		<div id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="3u">
-						<section>
-							<h2>Maecenas lectus</h2>
-							<div class="balloon">
-								<blockquote>&ldquo;&nbsp;&nbsp;Donec leo, vivamus ullamcorper fermentum nibh in augue pulvinar ullamcorper metus praesent a lacus at urna congue ullamcorper  rutrum.&nbsp;&nbsp;&rdquo;<br>
-									<br>
-									<strong>&ndash;&nbsp;&nbsp;John Smith</strong></blockquote>
+							<div class="box-gray aligncenter">
+								<h4>Fully responsive</h4>
+								<div class="icon">
+								<i class="fa fa-desktop fa-3x"></i>
+								</div>
+								<p>
+								 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+								</p>
+									
 							</div>
-							<div class="ballon-bgbtm">&nbsp;</div>
-						</section>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
+							</div>
+						</div>
 					</div>
-					<div class="3u">
-						<section>
-							<h2>Donec dictum</h2>
-							<ul class="default">
-								<li>
-									<h3>Mauris vulputate dolor sit amet</h3>
-									<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
-								</li>
-								<li>
-									<h3>Fusce ultrices fringilla metus</h3>
-									<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
-								</li>
-								<li>
-									<h3>Donec dictum metus in sapien</h3>
-									<p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
-								</li>
-							</ul>
-						</section>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Modern Style</h4>
+								<div class="icon">
+								<i class="fa fa-pagelines fa-3x"></i>
+								</div>
+								<p>
+								 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
+							</div>
+						</div>
 					</div>
-					<div class="3u">
-						<section>
-							<h2>Nulla leifend</h2>
-							<p>Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat.</p>
-							<ul class="style5">
-								<li><a href="#"><img src="images/pics07.jpg" alt=""></a></li>
-								<li><a href="#"><img src="images/pics08.jpg" alt=""></a></li>
-								<li><a href="#"><img src="images/pics09.jpg" alt=""></a></li>
-								<li><a href="#"><img src="images/pics10.jpg" alt=""></a></li>
-								<li><a href="#"><img src="images/pics11.jpg" alt=""></a></li>
-								<li><a href="#"><img src="images/pics12.jpg" alt=""></a></li>
-							</ul>
-							<a href="#" class="button">More Collections</a>
-						</section>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Customizable</h4>
+								<div class="icon">
+								<i class="fa fa-edit fa-3x"></i>
+								</div>
+								<p>
+								 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
+							</div>
+						</div>
 					</div>
-					<div class="3u">
-						<section>
-							<h2>Luctus eleifend</h2>
-							<p><strong>Aliquam erat volutpat. Pellentesque tristique ante ut risus. </strong></p>
-							<p>Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus. Donec placerat odio vel elit.</p>
-							<p>Donec placerat odio vel elit. Nullam ante orci, pellentesque eget, tempus quis, ultrices in, est. Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat.</p>
-							<a href="#" class="button">More Collections</a>
-						</section>
+					<div class="col-lg-3">
+						<div class="box">
+							<div class="box-gray aligncenter">
+								<h4>Valid HTML5</h4>
+								<div class="icon">
+								<i class="fa fa-code fa-3x"></i>
+								</div>
+								<p>
+								 Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
+								</p>
+									
+							</div>
+							<div class="box-bottom">
+								<a href="#">Learn more</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	<!-- /Footer -->
-
-	<!-- Copyright -->
-		<div id="copyright" class="container">
-			Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+		<!-- divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		<!-- end divider -->
+		<!-- Portfolio Projects -->
+		<div class="row">
+			<div class="col-lg-12">
+				<h4 class="heading">Recent Works</h4>
+				<div class="row">
+					<section id="projects">
+					<ul id="thumbs" class="portfolio">
+						<!-- Item Project and Filter Name -->
+						<li class="col-lg-3 design" data-id="id-0" data-type="web">
+						<div class="item-thumbs">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 1" href="img/works/1.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</div>
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="icon">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 2" href="img/works/2.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/2.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 3" href="img/works/3.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/3.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+						<!-- Item Project and Filter Name -->
+						<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="illustrator">
+						<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+						<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work 4" href="img/works/4.jpg">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+						<!-- Thumb Image and Description -->
+						<img src="img/works/4.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+						</li>
+						<!-- End Item Project -->
+					</ul>
+					</section>
+				</div>
+			</div>
 		</div>
 
+	</div>
+	</section>
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Get in touch with us</h5>
+					<address>
+					<strong>Moderna company Inc</strong><br>
+					 Modernbuilding suite V124, AB 01<br>
+					 Someplace 16425 Earth </address>
+					<p>
+						<i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
+						<i class="icon-envelope-alt"></i> email@domainname.com
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Pages</h5>
+					<ul class="link-list">
+						<li><a href="#">Press release</a></li>
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">Privacy policy</a></li>
+						<li><a href="#">Career center</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Latest posts</h5>
+					<ul class="link-list">
+						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
+						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Flickr photostream</h5>
+					<div class="flickr_badge">
+						<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+					</div>
+					<div class="clear">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Moderna 2014 All right reserved. By </span><a href="http://bootstraptaste.com" target="_blank">Bootstraptaste</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+{{ HTML::script('app/views/fe_base/js/jquery.js') }}
+{{ HTML::script('app/views/fe_base/js/jquery.easing.1.3.js') }}
+{{ HTML::script('app/views/fe_base/js/bootstrap.min.js') }}
+{{ HTML::script('app/views/fe_base/js/jquery.fancybox.pack.js') }}
+{{ HTML::script('app/views/fe_base/js/jquery.fancybox-media.js') }}
+{{ HTML::script('app/views/fe_base/js/google-code-prettify/prettify.js') }}
+{{ HTML::script('app/views/fe_base/js/jquery.quicksand.js') }}
+{{ HTML::script('app/views/fe_base/js/setting.js') }}
+{{ HTML::script('app/views/fe_base/js/jquery.flexslider.js') }}
+{{ HTML::script('app/views/fe_base/js/animate.js') }}
+{{ HTML::script('app/views/fe_base/js/custom.js') }}
 
-	</body>
+</body>
 </html>
