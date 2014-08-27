@@ -64,47 +64,66 @@ Route::get('login', function()
 	return View::make('backend/login');
 });
 
-Route::post('login_check', function()
-{
-	$loginData = array(
-		"email"			=>			e(Input::get("email")),
-		"password"		=>			e(Input::get("password"))
-	);
 
-	if (Auth::attempt($loginData)) 
+Route::group(array("before" => "csrf"), function()
+{
+	Route::post('login_check', function()
 	{
-		return Redirect::to("dashboard");
-	}
-	else
-	{
-		return Redirect::to("login")->with(array("error" => "Email o password incorrectos"));
-	}
+		$loginData = array(
+			"email"			=>			e(Input::get("email")),
+			"password"		=>			e(Input::get("password"))
+		);
+
+		if (Auth::attempt($loginData)) 
+		{
+			return Redirect::to("dashboard");
+		}
+		else
+		{
+			return Redirect::to("login")->with(array("error" => "Email o password incorrectos"));
+		}
 	
+	});
+
 });
 
-Route::get('/dashboard', function()
+Route::group(array("before" => "auth"), function()
 {
-	return View::make('backend/dashboard')->with(
-		array(
-			'title'		=>		"Panel de Control",
-            'subtitle'	=>		"Editar secciones"
-		));
+
+	Route::get('dashboard', function()
+	{
+		return View::make('backend/dashboard')->with(
+			array(
+				'title'		=>		"Panel de Control",
+	            'subtitle'	=>		"Editar secciones"
+			));
+	});
+
+	Route::get('/seo', function()
+	{
+		return View::make('backend/seo')->with(
+			array(
+				'title'		=>		"Panel de Control",
+	            'subtitle'	=>		"Editar SEO"
+			));
+	});
+
+	Route::get('/config', function()
+	{
+		return View::make('backend/config')->with(
+			array(
+				'title'		=>		"Panel de Control",
+	            'subtitle'	=>		"Configuración"
+			));
+	});
 });
 
-Route::get('/seo', function()
+Route::get("logout", function()
 {
-	return View::make('backend/seo')->with(
-		array(
-			'title'		=>		"Panel de Control",
-            'subtitle'	=>		"Editar SEO"
-		));
+	Session::flush();
+	Auth::logout();
+		
+	return Redirect::to("login")->with(array("error" => "Has cerrado sesión correctamente"));
 });
 
-Route::get('/config', function()
-{
-	return View::make('backend/config')->with(
-		array(
-			'title'		=>		"Panel de Control",
-            'subtitle'	=>		"Configuración"
-		));
-});
+
