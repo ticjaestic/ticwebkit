@@ -63,7 +63,7 @@
               <li>
               	{{ HTML::image('app/views/fe_base/img/slide1.jpeg', 'slide 1')}}
                 <div class="flex-caption">
-                    <h3>Abogado Derecho Civil</h3> 
+                    <h2>Abogado Derecho Civil</h2> 
 					<p>Descubre nuestros servicios de Abogado en Derecho Civil</p> 
 					{{ HTML::link(URL::to('quehacemos'),'Leer más', array("class" => "btn btn-theme")) }}
                 </div>
@@ -71,7 +71,7 @@
               <li>
                 {{ HTML::image('app/views/fe_base/img/slide2.jpeg', 'slide 2')}}
                 <div class="flex-caption">
-                    <h3>Abogado Derecho Mercantil</h3> 
+                    <h2>Abogado Derecho Mercantil</h2> 
 					<p>Descubre nuestros servicios de Abogado en Derecho Civil</p> 
 					{{ HTML::link(URL::to('quehacemos'),'Leer más', array("class" => "btn btn-theme")) }}
                 </div>
@@ -79,7 +79,7 @@
               <li>
                 {{ HTML::image('app/views/fe_base/img/slide3.jpeg', 'slide 3')}}
                 <div class="flex-caption">
-                    <h3>Abogado Derecho Matrimonial</h3> 
+                    <h2>Abogado Derecho Matrimonial</h2> 
 					<p>Descubre nuestros servicios de Abogado en Derecho Civil</p> 
 					{{ HTML::link(URL::to('quehacemos'),'Leer más', array("class" => "btn btn-theme")) }}
                 </div>
@@ -90,9 +90,6 @@
 			</div>
 		</div>
 	</div>	
-	
-	
-
 	</section>
 	<section class="callaction">
 	<div class="container">
@@ -100,7 +97,7 @@
 			<div class="col-lg-12">
 				<div class="big-cta">
 					<div class="cta-text">
-						<h2><span>Abogado en Reus</span> | Especialistas en Derecho Civil</h2>
+						<h1><span>Abogado en Reus</span> | Especialistas en Derecho Civil</h1>
 					</div>
 				</div>
 			</div>
@@ -115,7 +112,7 @@
 					<div class="col-lg-3">
 						<div class="box">
 							<div class="box-gray aligncenter">
-								<h4>Derecho Sanitario</h4>
+								<h3 style="font-size:18px">Derecho Sanitario</h3>
 								<div class="icon">
 								<i class="fa fa-heart fa-3x"></i>
 								</div>
@@ -132,7 +129,7 @@
 					<div class="col-lg-3">
 						<div class="box">
 							<div class="box-gray aligncenter">
-								<h4>Responsabilidad Civil</h4>
+								<h3 style="font-size:18px">Responsabilidad Civil</h3>
 								<div class="icon">
 								<i class="fa fa-user fa-3x"></i>
 								</div>
@@ -149,7 +146,7 @@
 					<div class="col-lg-3">
 						<div class="box">
 							<div class="box-gray aligncenter">
-								<h4>Accidentes de trabajo</h4>
+								<h3 style="font-size:18px">Accidentes de trabajo</h3>
 								<div class="icon">
 								<i class="fa fa-wrench fa-3x"></i>
 								</div>
@@ -166,7 +163,7 @@
 					<div class="col-lg-3">
 						<div class="box">
 							<div class="box-gray aligncenter">
-								<h4>Accidentes de tráfico</h4>
+								<h3 style="font-size:18px">Accidentes de tráfico</h3>
 								<div class="icon">
 								<i class="fa fa-road fa-3x"></i>
 								</div>
@@ -179,6 +176,73 @@
 								{{ HTML::link(URL::to('quehacemos'),'Leer más') }}
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		<!-- end divider -->
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-6">
+						<h4>@yield('title')</h4>
+						<p>
+							En Abogado en Reus tenemos una amplia experiencia en asesoramiento jurídico tanto a particulares como a empresas, contamos con 15 años de práctica en el ejercicio profesional.
+						</p>
+						<p>
+							En nuestro bufete de Abogado en Reus nos anticipamos y resolvemos eficazmente los retos jurídicos de nuestros clientes.
+						</p>
+						<p>
+							En Abogado en Reus  creemos en nuestros clientes. Ofrecemos servicios adaptados a su necesidades.
+						</p>
+						<p>
+							Nos encontramos firmemente asentados en el sector abogados, proporcionando asesoramiento a corporaciones, a entidades y a particulares, desde sus Áreas Contenciosa, de Derecho Público, Laboral y de la Seguridad Social, Nuevas Tecnologías, Derecho Farmaceutico y Socio Sanitaria.
+						</p>
+					</div>
+					<div class="col-lg-6">
+						
+				<h4>Contacta con nosotros sin compromiso</h4>
+				<form id="contactform" action="#" method="post" class="validateform" name="send-contact">
+					<div id="sendmessage">
+						 Your message has been sent. Thank you!
+					</div>
+					<div class="row">
+						<div class="col-lg-4 field">
+							<input type="text" name="name" placeholder="* Escriba su nombre completo" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+							<div class="validation">
+							</div>
+						</div>
+						<div class="col-lg-4 field">
+							<input type="text" name="email" placeholder="* Escriba su e-mail" data-rule="email" data-msg="Please enter a valid email" />
+							<div class="validation">
+							</div>
+						</div>
+						<div class="col-lg-4 field">
+							<input type="text" name="subject" placeholder="Escriba un asunto" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+							<div class="validation">
+							</div>
+						</div>
+						<div class="col-lg-12 margintop10 field">
+							<textarea rows="12" name="message" class="input-block-level" placeholder="* Escriba su duda..." data-rule="required" data-msg="Please write something"></textarea>
+							<div class="validation">
+							</div>
+							<p>
+								<button class="btn btn-theme margintop10 pull-left" type="submit">Enviar mensaje</button>
+								<span class="pull-right margintop20">* Campos requeridos obligatoriamente</span>
+							</p>
+						</div>
+					</div>
+				</form>
+			</div>
 					</div>
 				</div>
 			</div>
@@ -233,7 +297,7 @@
 				<div class="col-lg-6">
 					<div class="copyright">
 						<p>
-							<span>&copy; Design By </span><a href="http://jaestic.com" target="_blank">Jaestic</a>
+							<a href="http://yaestoy.com" target="_blank"><span>&copy; Diseño web en Reus</span></a>
 						</p>
 					</div>
 				</div>
@@ -266,6 +330,17 @@
 {{ HTML::script('app/views/fe_base/js/jquery.flexslider.js') }}
 {{ HTML::script('app/views/fe_base/js/animate.js') }}
 {{ HTML::script('app/views/fe_base/js/custom.js') }}
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54263262-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 </body>
 </html>
