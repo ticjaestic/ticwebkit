@@ -1,4 +1,4 @@
-@extends('fe_base.layout')
+@extends('fe_base.layout_home')
 
 @section('title')
 	{{ $title }}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <title>@yield('title')</title>
@@ -45,7 +45,6 @@
                         <li>{{ HTML::link(URL::to('quienessomos'), 'Quiénes somos') }}</li>
                         <li>{{ HTML::link(URL::to('quehacemos'), 'Qué hacemos') }}</li>
                         <li>{{ HTML::link(URL::to('dondeestamos'), 'Dónde estamos') }}</li>
-                        <li>{{ HTML::link(URL::to('fotos'), 'Fotos') }}</li>
                         <li>{{ HTML::link(URL::to('contacto'), 'Contacto') }}</li>
                     </ul>
                 </div>
@@ -216,7 +215,6 @@
 						<li>{{ HTML::link(URL::to('quienessomos'), 'Quiénes somos') }}</li>
                         <li>{{ HTML::link(URL::to('quehacemos'), 'Qué hacemos') }}</li>
                         <li>{{ HTML::link(URL::to('dondeestamos'), 'Dónde estamos') }}</li>
-                        <li>{{ HTML::link(URL::to('fotos'), 'Fotos') }}</li>
                         <li>{{ HTML::link(URL::to('contacto'), 'Contacto') }}</li>
 					</ul>
 				</div>

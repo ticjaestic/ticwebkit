@@ -23,51 +23,51 @@ Route::get('/', function()
 
 Route::get('/quienessomos', function()
 {
-	return View::make('frontend/home')->with(
+	return View::make('frontend/section_qs')->with(
 		array(
 			'title'		        =>		"Abogado en Reus | Quiénes Somos",
             'metadescription'   =>      "Abogado en Reus, servicios de Derecho Civil, Derecho Mercantil, Derecho Familiar, Derecho Inmobiliario, Derecho sobre propiedad",
-            'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus"
+            'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus",
+            'seccion'			=>		"Quiénes somos",
+            'title_content'		=>		"Quiénes somos"
+
 		));
 });
 
 Route::get('/quehacemos', function()
 {
-	return View::make('frontend/home')->with(
+	return View::make('frontend/section_qh')->with(
 		array(
 			'title'		        =>		"Abogado en Reus | Qué hacemos",
             'metadescription'   =>      "Abogado en Reus, servicios de Derecho Civil, Derecho Mercantil, Derecho Familiar, Derecho Inmobiliario, Derecho sobre propiedad",
-            'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus"
+            'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus",
+            'seccion'			=>		"Qué hacemos",
+            'title_content'		=>		"Qué hacemos"
 		));
 });
 
 Route::get('/dondeestamos', function()
 {
-	return View::make('frontend/home')->with(
+	return View::make('frontend/section_de')->with(
 		array(
 			'title'		        =>		"Abogado en Reus | Quiénes Somos",
             'metadescription'   =>      "Abogado en Reus, servicios de Derecho Civil, Derecho Mercantil, Derecho Familiar, Derecho Inmobiliario, Derecho sobre propiedad",
-            'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus"
-		));
-});
-
-Route::get('/fotos', function()
-{
-	return View::make('frontend/home')->with(
-		array(
-			'title'		        =>		"Abogado en Reus | Quiénes Somos",
-            'metadescription'   =>      "Abogado en Reus, servicios de Derecho Civil, Derecho Mercantil, Derecho Familiar, Derecho Inmobiliario, Derecho sobre propiedad",
-            'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus"
+            'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus",
+            'seccion'			=>		"Dónde estamos",
+            'title_content'		=>		"Dónde estamos"
 		));
 });
 
 Route::get('/contacto', function()
 {
-	return View::make('frontend/home')->with(
+	return View::make('frontend/section_ct')->with(
 		array(
 			'title'		        =>		"Abogado en Reus | Quiénes Somos",
             'metadescription'   =>      "Abogado en Reus, servicios de Derecho Civil, Derecho Mercantil, Derecho Familiar, Derecho Inmobiliario, Derecho sobre propiedad",
-            'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus"
+            'keywords'          =>      "abogado en reus, abogados en reus, abogado reus, abogados reus, responsabilidad civil en reus, accidentes de trabajo en reus, accidentes de trafico en reus, derecho sanitario en reus",
+            'seccion'			=>		"Contacto",
+            'title_content'		=>		"Contacto"
+
 		));
 });
 
